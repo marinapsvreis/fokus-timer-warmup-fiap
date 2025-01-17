@@ -37,20 +37,17 @@ const duracaoDescansoLongo = 900;
 
 focoBt.addEventListener("click", () => {
   tempoDecorridoEmSegundos = duracaoFoco;
-  alterarContexto("foco");
-  focoBt.classList.add("active");
+  alterarContexto("foco");g
 });
 
 curtoBt.addEventListener("click", () => {
   tempoDecorridoEmSegundos = duracaoDescansoCurto;
-  alterarContexto("descanso-curto");
-  curtoBt.classList.add("active");
+  alterarContexto("descanso-curto");  
 });
 
 longoBt.addEventListener("click", () => {
   tempoDecorridoEmSegundos = duracaoDescansoLongo;
-  alterarContexto("descanso-longo");
-  longoBt.classList.add("active");
+  alterarContexto("descanso-longo");  
 });
 
 function alterarContexto(contexto) {
@@ -64,14 +61,17 @@ function alterarContexto(contexto) {
 
   switch (contexto) {
     case "foco":
+      focoBt.classList.add("active");
       titulo.innerHTML = ` Otimize sua produtividade,<br>
                 <strong class="app__title-strong">mergulhe no que importa.</strong>`;
       break;
     case "descanso-curto":
+      curtoBt.classList.add("active");
       titulo.innerHTML = ` Que tal dar uma respirada?<br>
                 <strong class="app__title-strong">Faça uma pausa curta!</strong>`;
       break;
     case "descanso-longo":
+      longoBt.classList.add("active");
       titulo.innerHTML = ` Hora de voltar a superfície.<br>
                 <strong class="app__title-strong">Faça uma pausa longa.</strong>`;
       break;
