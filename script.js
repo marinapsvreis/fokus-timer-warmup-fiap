@@ -120,3 +120,4 @@ function mostrarTempo() {
 
 mostrarTempo();
 alterarContexto("foco");
+startPauseBtImg.setAttribute("src", "./imagens/play_arrow.png");
