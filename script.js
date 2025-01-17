@@ -119,4 +119,4 @@ function mostrarTempo() {
 }
 
 mostrarTempo();
-alterarContexto(foco);
+alterarContexto("foco");
